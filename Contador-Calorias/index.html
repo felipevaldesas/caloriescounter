@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <title>Calculadora de calorias</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>Contador Calorias</h1>
+        </header>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descripcion</th>
+                        <th>Calorias</th>
+                        <th>Carbohidratos</th>
+                        <th>Proteinas</th>
+                    </tr>
+                </thead>
+                <tbody id="list-items">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="total">Total</td>
+                        <td id="total-calories">0</td>
+                        <td id="total-carbs">0</td>
+                        <td id="total-protein">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="form-container">
+            <form action="javascript:void(0);">
+                <div>
+                    <input type="text" name="description" id="description" placeholder="Descripcion">
+                    <input type="number" min="0" name="calories" id="calories" placeholder=" Calorias">
+                    <input type="number" min="0" name="carbs" id="carbs" placeholder="Carbohidratos">
+                    <input type="number" min="0" name="protein" id="protein" placeholder="Proteinas">
+                </div>
+                <button class="add" id="add">+</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
